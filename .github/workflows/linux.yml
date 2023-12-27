@@ -1,0 +1,29 @@
+name: Build on Linux
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: fedora:rawhide
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: install dependencies
+        run: |
+          dnf install -y dnf5
+          dnf5 install -y gcc-c++ python3 wget \
+            guidelines-support-library-devel fmt-devel json-devel \
+            cli11-devel libgit2-devel openssl-devel
+
+      - name: install dependencies
+        run: |
+          mkdir -p build
+          env PACKAGE=YES LOCALBASE=/usr \
+            NON_LOCAL_DEPS='["google_apis","bazel_remote_apis"]' \
+            python3 ./bin/bootstrap.py . build

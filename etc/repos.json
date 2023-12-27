@@ -277,8 +277,8 @@
       { "type": "archive"
       , "content": "da6d7d589ccd1924ba9840a4e329e438dfa27f86"
       , "fetch": "https://github.com/bazelbuild/remote-apis/archive/e1fe21be4c9ae76269a5a63215bb3c72ed9ab3f0.tar.gz"
-      , "sha256": "7421abd5352ccf927c2050453a4dbfa1f7b1c7170ec3e8702b6fe2d39b8805fe"
-      , "sha512": "3042690ee4b17a27db92ca867b4225c25f3f16344dce5fe86695d72ddda531e1593a5f0f70a291283451ce1e9f606c2285d222df3787815cd8f4054e1113bc9d"
+      , "sha256": "fe5e509db8dcbe8c25594dd2bbe7d0b04ef108e57e75086c89a16e8820bdde9f"
+      , "sha512": "4d5c0c55acd8c07bc12c157bd6964f8d3bf3a44766a64fc45a5822043f38ba44c857a6bc3e09d3ba41430942483174222fa7fe6fb619af55f9ecefb375f7e5c4"
       , "subdir": "remote-apis-e1fe21be4c9ae76269a5a63215bb3c72ed9ab3f0"
       }
     , "target_root": "import targets"
